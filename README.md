@@ -1,5 +1,5 @@
 README.md
-# Diseño de Software - Proyecto integrador
+# Diseño de Software - Semana 3 - Patrones
 ## Información general
 - **Universidad:** Universidad Espíritu Santo
 - **Carrera:** Computación
@@ -8,10 +8,13 @@ README.md
 - **Periodo:** PEL 4 - 2026
 - **Estudiante:** CARLOS VILLACRESES
 - **Docente:** Ph.D. Jaime Paul Sayago Heredia
+
 ## Descripción
 Sistema de gestion de tutorias aplicando Diseño de software.
+
 ## Objetivos
-- Use de patrón Factory Method.
+- Uso de patrón Factory Method.
+- Uso de patrón Builder.
 
 ## Tecnologías
 - Java 21
