@@ -1,165 +1,66 @@
-# UEES | Diseño de Software | Semana 3
+README.md
+# Diseño de Software - Proyecto integrador
+## Información general
+- **Universidad:** Universidad Espíritu Santo
+- **Carrera:** Computación
+- **Asignatura:** Diseño de Software
+- **Código:** UCOM0310
+- **Periodo:** PEL 4 - 2026
+- **Estudiante:** CARLOS VILLACRESES
+- **Docente:** Ph.D. Jaime Paul Sayago Heredia
+## Descripción
+Sistema de gestion de tutorias aplicando Diseño de software.
+## Objetivos
+- Use de patrón Factory Method.
 
-## Actividad 1 – ¿Necesitamos realmente un patrón?
-
-Proyecto base para el mini taller de 30 minutos sobre **Factory Method**.
-
-El proyecto representa deliberadamente una solución inicial que **funciona**,
-pero concentra la decisión de creación de notificadores en una clase con
-`if/else`.
-
-El objetivo del taller es analizar si existe suficiente variabilidad y
-acoplamiento como para justificar una refactorización mediante **Factory Method**.
-
----
-
-## Requisitos
-
+## Tecnologías
 - Java 21
-- Maven 3.9 o superior
-- Git
-- Opcional: PlantUML o diagrams.net
+- Apache Maven 3.9.x
+- Git y GitHub
+- JUnit 5
 
-Verificar:
+Diseño de Software · UCOM0310 · PEL 4-2026 · UEES Online
 
+- Spring Boot, cuando corresponda
+## Requisitos previos
+- JDK 21 instalado.
+- Maven disponible en PATH.
+- Git configurado.
+## Instalación
 ```bash
-java -version
-javac -version
-mvn -version
-git --version
+git clone https://github.com/carlos-villacreses/ucom0310-diseno-software-villacreses_semana3-patrones.git
+cd ucom0310-diseno-software-villacreses_semana3patrones
+mvn clean test
 ```
-
----
-
-## Compilar
-
+## Ejecución
 ```bash
-mvn clean compile
+mvn package
+java -jar target/NOMBRE-DEL-ARCHIVO.jar
 ```
+Adapte los comandos de ejecución a la estructura real del proyecto.
+## Estructura del proyecto
+```text
 
-## Ejecutar pruebas
 
+```
+## Funcionalidades
+- Implementación the patrón FACTORY METHOD.
+## Pruebas
+Para ejecutar las pruebas:
 ```bash
 mvn clean test
 ```
+## Control de versiones
+El proyecto utiliza la rama `main`. Las funcionalidades se desarrollan en ramas específicas y se integran
+mediante revisión.
 
-## Ejecutar la aplicación
+Diseño de Software · UCOM0310 · PEL 4-2026 · UEES Online
 
-```bash
-mvn exec:java
-```
+## Evidencias
 
----
 
-## Estructura
+## Uso de inteligencia artificial
+No se usó IA.
 
-```text
-src/main/java/edu/uees/disenosoftware/
-├── app/
-│   └── Main.java
-└── notificacion/
-    ├── Notificador.java
-    ├── NotificadorEmail.java
-    ├── NotificadorPush.java
-    ├── NotificadorSMS.java
-    ├── CreadorNotificadorSimple.java
-    └── ServicioNotificacion.java
-
-src/test/java/...
-docs/modelo-inicial.puml
-```
-
----
-
-## Situación inicial
-
-`CreadorNotificadorSimple` contiene:
-
-```java
-if ("EMAIL".equalsIgnoreCase(tipo)) {
-    return new NotificadorEmail();
-}
-
-if ("PUSH".equalsIgnoreCase(tipo)) {
-    return new NotificadorPush();
-}
-
-if ("SMS".equalsIgnoreCase(tipo)) {
-    return new NotificadorSMS();
-}
-```
-
-Esto permite discutir:
-
-1. ¿Qué cambia?
-2. ¿Qué permanece estable?
-3. ¿Dónde existe acoplamiento con clases concretas?
-4. ¿Qué ocurrirá al agregar `TEAMS` o `WHATSAPP`?
-5. ¿Factory Method reduce realmente un costo de cambio en este caso?
-6. ¿Qué complejidad nueva introducirá?
-
----
-
-## Reto del taller
-
-Refactorizar el diseño hacia Factory Method creando, como mínimo:
-
-```text
-NotificadorCreator
-├── EmailCreator
-├── PushCreator
-└── SmsCreator
-```
-
-Mantener:
-
-```text
-Notificador
-├── NotificadorEmail
-├── NotificadorPush
-└── NotificadorSMS
-```
-
-Después agregar una nueva variante:
-
-```text
-NotificadorTeams
-TeamsCreator
-```
-
-y responder:
-
-> ¿Qué clases existentes tuvieron que modificarse?
-
----
-
-## Commits sugeridos
-
-```bash
-git init
-git add .
-git commit -m "chore: crear proyecto base del taller"
-
-git add .
-git commit -m "refactor: aplicar factory method a notificadores"
-
-git add .
-git commit -m "feat: agregar notificador teams"
-
-git add .
-git commit -m "docs: actualizar UML y conclusiones"
-```
-
----
-
-## Evidencia sugerida
-
-- Proyecto que compile.
-- `mvn clean test` exitoso.
-- UML inicial y UML final.
-- Historial de commits.
-- Respuesta breve:
-  - qué problema existía;
-  - qué mejoró;
-  - qué costo añadió Factory Method;
-  - si el patrón quedó justificado o no.
+## Autor
+CARLOS VILLACRESES - CARLOS.VILLACRESES@UEES.EDU.EC
