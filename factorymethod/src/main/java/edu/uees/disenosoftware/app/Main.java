@@ -11,12 +11,12 @@ public class Main {
     public static void main(String[] args) {
     	 System.out.println("=== Factory Method ===");
     	 NotificadorCreator email = new EmailCreator();
-    	 	email.notificar("estudiantes uees", "Tutoría confirmada");
+    	 	email.notificar("Estudiantes UEES", "Tutoría confirmada");
     	
     	 NotificadorCreator push = new PushCreator();
-    	 	push.notificar("usuario 01", "Tutoria empieza en 30 minutos");
+    	 	push.notificar("Usuario 09", "Tutoria empieza en 30 minutos");
     	 	
     	 NotificadorCreator sms = new SmsCreator();
-    	 	sms.notificar("5938887373", "Tutoria reagendada");
+    	 	sms.notificar("59387359113", "Tutoria reagendada");
     }
 }
