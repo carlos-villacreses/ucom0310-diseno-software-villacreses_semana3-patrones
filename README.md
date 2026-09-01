@@ -92,6 +92,10 @@ Adapte los comandos de ejecución a la estructura real del proyecto.
 │                       └── notificacion
 │                           └── CreadorNotificadorSimpleTest.class
 ├── builder
+│   ├── docs
+│   │   ├── builder_uml.jpg
+│   │   ├── reservation_builder_uml.html
+│   │   └── reservation_builder_uml.html.pdf
 │   └── src
 │       └── main
 │           └── java
@@ -103,6 +107,8 @@ Adapte los comandos de ejecución a la estructura real del proyecto.
 │                               ├── Reservationbuilder.java
 │                               └── Reservation.java
 ├── factorymethod
+│   ├── docs
+│   │   └── factorymethod_uml.jpg
 │   └── src
 │       └── main
 │           └── java
