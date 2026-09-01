@@ -142,7 +142,7 @@ Diseño de Software · UCOM0310 · PEL 4-2026 · UEES Online
 
 
 ## Uso de inteligencia artificial
-No se usó IA.
+Se utilizó Claude Code para generar los diagramas UML en base a cada solución desarrollada.
 
 ## Autor
 CARLOS VILLACRESES - CARLOS.VILLACRESES@UEES.EDU.EC
