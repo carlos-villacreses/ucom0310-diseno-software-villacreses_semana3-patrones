@@ -43,11 +43,90 @@ java -jar target/NOMBRE-DEL-ARCHIVO.jar
 Adapte los comandos de ejecución a la estructura real del proyecto.
 ## Estructura del proyecto
 ```text
-
+.
+├── base
+│   ├── docs
+│   │   └── modelo-inicial.puml
+│   ├── pom.xml
+│   ├── README.md
+│   ├── src
+│   │   ├── main
+│   │   │   └── java
+│   │   │       └── edu
+│   │   │           └── uees
+│   │   │               └── disenosoftware
+│   │   │                   ├── app
+│   │   │                   │   └── Main.java
+│   │   │                   └── notificacion
+│   │   │                       ├── CreadorNotificadorSimple.java
+│   │   │                       ├── NotificadorEmail.java
+│   │   │                       ├── Notificador.java
+│   │   │                       ├── NotificadorPush.java
+│   │   │                       ├── NotificadorSMS.java
+│   │   │                       └── ServicioNotificacion.java
+│   │   └── test
+│   │       └── java
+│   │           └── edu
+│   │               └── uees
+│   │                   └── disenosoftware
+│   │                       └── notificacion
+│   │                           └── CreadorNotificadorSimpleTest.java
+│   └── target
+│       ├── classes
+│       │   └── edu
+│       │       └── uees
+│       │           └── disenosoftware
+│       │               ├── app
+│       │               │   └── Main.class
+│       │               └── notificacion
+│       │                   ├── CreadorNotificadorSimple.class
+│       │                   ├── Notificador.class
+│       │                   ├── NotificadorEmail.class
+│       │                   ├── NotificadorPush.class
+│       │                   ├── NotificadorSMS.class
+│       │                   └── ServicioNotificacion.class
+│       └── test-classes
+│           └── edu
+│               └── uees
+│                   └── disenosoftware
+│                       └── notificacion
+│                           └── CreadorNotificadorSimpleTest.class
+├── builder
+│   └── src
+│       └── main
+│           └── java
+│               └── edu
+│                   └── uees
+│                       └── disenosoftware
+│                           └── appbuilder
+│                               ├── Main.java
+│                               ├── Reservationbuilder.java
+│                               └── Reservation.java
+├── factorymethod
+│   └── src
+│       └── main
+│           └── java
+│               └── edu
+│                   └── uees
+│                       └── disenosoftware
+│                           ├── app
+│                           │   └── Main.java
+│                           └── notificacion
+│                               ├── EmailCreator.java
+│                               ├── NotificadorCreator.java
+│                               ├── NotificadorEmail.java
+│                               ├── Notificador.java
+│                               ├── NotificadorPush.java
+│                               ├── NotificadorSMS.java
+│                               ├── NotificarTeams.java
+│                               ├── PushCreator.java
+│                               └── SmsCreator.java
+└── README.md
 
 ```
 ## Funcionalidades
-- Implementación the patrón FACTORY METHOD.
+- Implementación de patrón FACTORY METHOD.
+- Implementación de patron BUILDER.
 ## Pruebas
 Para ejecutar las pruebas:
 ```bash
